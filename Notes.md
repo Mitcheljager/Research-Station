@@ -1,0 +1,45 @@
+- You're a researcher in an arctic location, in some some of tiny temporary research shelter
+- It's cold outside, a vast infinite snowy flat landscape all around, winds howling
+- Your shelter is a 2x2 meter half-dome structure that is not unlike a very sturdy tent
+    - The shelter is accessed via a two-door airlock to keep most of the cold out
+    - Inside is your bed, some shelves with books, a laptop, and some research equipment
+    - Some diesel engine sits outside providing power, additional power is supplied via a wind turbine
+- In your immediate surrounding sit various monitoring hardware
+    - Drilling equipment in various locations, each drilling deeper and deeper as time goes on
+    - A wind speed measuring device
+    - Temperature gages
+    - Air quality monitors
+- Your job is to monitor and maintain different research points, as well as the shelter itself
+    - Collect and scan samples from drills
+    - Clean ice build up from various gages and measuring devices
+    - Inspect and maintain motors
+- You are in contact with your central base some place hours away
+    - You are tasked with sending back data of collected samples are data
+    - To ensure your safety you are to send a manual callback every 12 hours
+- The game takes place throughout various days
+    - Days consist of permorming your duties and chores, followed to processed data, and sending a callback to base
+    - The day ends when you go back to sleep
+    - The game may skip periods of days in order to move the story along, but the point is to establish a routine early on
+- Most of your tasks are performed via your laptop
+    - Your laptop contains various programs, some showing data from your research equipment, some allowing control of cameras
+    - Most actions can be performed via a command line interface, allowing your to control various aspects via console commands
+    - Contact with the central base is performed through emails. You receive messages back to tell a story of sorts
+- Horror in the game comes from isolation and paranoia
+    - You are alone but things happen that make you think otherwise
+        - A knock is heard on a window. You can choose to ignore it or go outside and investigate. Either way, nothing is there
+        - Drills are indicated by lights. One of the lights is off. You go to inspect and see a cable is snapped. You go back inside to get your tools, go back out and a different drill is now broken instead, making your question yourself
+        - Temperature gauges show values that could not possibly be correct
+        - You see someone outside, a long outstretched shadow as the sun sits low. You could choose to come to their rescue only to discover that no matter how far you walk they stay the same distance away
+        - Radio transmissions come in that seem otherworldly. It's up to you to decide if these are just noise, some important message, or something perhaps otherwordly
+        - Microscope samples show data unlike anything in existence
+    - Failing to perform your tasks may lead to failure of equipment, causing you to make choices on how to proceed
+        - You could stay put and wait for rescue
+        - You can leave your base and attempt to head back to base on foot
+- The goal of the game is to make it to the end of your research period
+- The game can end in various ways, unlocking each ending is part of the game
+    - You could contact base and tell them you are done and want out
+    - You could fail to send a callback to base, causing them to come and get you
+    - You could die freezing to death outside
+    - You could fail to maintain the generator, causing it to fail, leading to your death somehow
+    - You could succumb to madness... somehow
+    - You could keep level headed and perform your duties as planned
