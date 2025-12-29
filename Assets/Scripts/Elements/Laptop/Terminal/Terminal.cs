@@ -21,7 +21,7 @@ public class Terminal : MonoBehaviour {
     }
 
     private void Run(string input) {
-        string[] splitInput = input.Split(' ');
+        string[] splitInput = input.Trim().Split(' ');
         string commandName = splitInput[0].ToLower();
 
         if (commandName.Length == 0) return;
