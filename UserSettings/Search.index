@@ -1,0 +1,13 @@
+{
+    "name": "Assets",
+    "roots": ["Assets"],
+    "includes": [],
+    "excludes": ["Assets/Temp/", "Assets/External/", "Assets/Plugins/"],
+    "options": {
+        "types": true,
+        "properties": true,
+        "extended": false,
+        "dependencies": true
+    },
+    "baseScore": 999
+}
