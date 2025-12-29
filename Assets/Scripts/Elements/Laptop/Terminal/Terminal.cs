@@ -24,6 +24,8 @@ public class Terminal : MonoBehaviour {
         string[] splitInput = input.Split(' ');
         string commandName = splitInput[0].ToLower();
 
+        if (commandName.Length == 0) return;
+
         ITerminalCommand command = ParseCommand(commandName);
 
         if (command == null) {
