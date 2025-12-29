@@ -8,18 +8,18 @@ public class TestTerminalCommand : ITerminalCommand {
             Debug.Log($"{parameter.Key}: {parameter.Value}");
         }
 
-        if (parameters.Parameters.TryGetValue("type", out string type)) {
-            if (!parameters.Parameters.TryGetValue("0", out string message)) {
-                message = "No message given";
-            }
+        parameters.Parameters.TryGetValue("type", out string type);
 
-            if (type == "warn") {
-                Debug.LogWarning(message);
-            } else if (type == "error") {
-                Debug.LogError(message);
-            } else {
-                Debug.Log(message);
-            }
+        if (!parameters.Parameters.TryGetValue("0", out string message)) {
+            message = "No message given";
+        }
+
+        if (type == "warn") {
+            TerminalEvent.AddToStream($"<color=#ffff00>{message}</color>");
+        } else if (type == "error") {
+            TerminalEvent.AddToStream($"<color=#ff0000>{message}</color>");
+        } else {
+            TerminalEvent.AddToStream(message);
         }
     }
 }

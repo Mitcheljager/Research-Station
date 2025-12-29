@@ -9,11 +9,11 @@ public class Terminal : MonoBehaviour {
     }
 
     void OnEnable() {
-        TerminalEvents.OnExecuteCommand += Run;
+        TerminalEvent.OnExecuteCommand += Run;
     }
 
     void OnDisable() {
-        TerminalEvents.OnExecuteCommand -= Run;
+        TerminalEvent.OnExecuteCommand -= Run;
     }
 
     private void Register(ITerminalCommand command) {
@@ -27,7 +27,7 @@ public class Terminal : MonoBehaviour {
         ITerminalCommand command = ParseCommand(commandName);
 
         if (command == null) {
-            Debug.Log($"Unknown command: {commandName}");
+            TerminalEvent.AddToStream($"Unknown command: {commandName}");
             return;
         }
 
