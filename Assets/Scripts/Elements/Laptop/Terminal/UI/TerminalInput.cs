@@ -8,6 +8,8 @@ public class TerminalInput : MonoBehaviour {
 
     private readonly List<string> inputHistory = new() { "" };
     private int currentInputHistoryIndex = 0;
+    private int previousCaretPosition = 0;
+    private bool wasPreviousInputNavigation = false;
 
     void Start() {
         input.onSubmit.AddListener(_ => OnSubmit());
@@ -35,12 +37,18 @@ public class TerminalInput : MonoBehaviour {
 
         Keyboard keyboard = Keyboard.current;
 
-        if (keyboard.upArrowKey.wasPressedThisFrame) {
+        bool any = keyboard.anyKey.wasPressedThisFrame;
+        bool up = keyboard.upArrowKey.wasPressedThisFrame;
+        bool down = keyboard.downArrowKey.wasPressedThisFrame;
+
+        if (!any) return;
+
+        if (up && (previousCaretPosition == 0 || wasPreviousInputNavigation || input.text.Length == 0)) {
             currentInputHistoryIndex = Mathf.Max(currentInputHistoryIndex - 1, 0);
             SetInputFromHistory();
         }
 
-        if (keyboard.downArrowKey.wasPressedThisFrame) {
+        if (down && (previousCaretPosition == input.text.Length)) {
             currentInputHistoryIndex = Mathf.Min(currentInputHistoryIndex + 1, inputHistory.Count);
             SetInputFromHistory();
         }
@@ -48,10 +56,14 @@ public class TerminalInput : MonoBehaviour {
         if (keyboard.ctrlKey.isPressed && keyboard.cKey.wasPressedThisFrame) {
             Clear();
         }
+
+        wasPreviousInputNavigation = any && (up || down);
+        previousCaretPosition = input.caretPosition;
     }
 
     private void AddToHistory(string text) {
-        inputHistory.Add(text);
+        if (text.Trim().Length > 0) inputHistory.Add(text);
+
         currentInputHistoryIndex = inputHistory.Count;
     }
 
