@@ -8,11 +8,19 @@ public class Terminal : MonoBehaviour {
         Register(new TestTerminalCommand());
     }
 
-    public void Register(ITerminalCommand command) {
+    void OnEnable() {
+        TerminalEvents.OnExecuteCommand += Run;
+    }
+
+    void OnDisable() {
+        TerminalEvents.OnExecuteCommand -= Run;
+    }
+
+    private void Register(ITerminalCommand command) {
         commands[command.Name.ToLower()] = command;
     }
 
-    public void Run(string input) {
+    private void Run(string input) {
         string[] splitInput = input.Split(' ');
         string commandName = splitInput[0].ToLower();
 
