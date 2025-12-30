@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 
 public class DragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler {
     public Window window;
+
     private Vector2 offset;
 
     public void OnBeginDrag(PointerEventData eventData) {

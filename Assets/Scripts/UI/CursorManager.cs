@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class CursorManager : MonoBehaviour {
+    private Texture2D currentCursor;
+
+    public void SetCursor(Texture2D texture, Vector2 hotspot) {
+        Cursor.SetCursor(texture, hotspot, CursorMode.Auto);
+        currentCursor = texture;
+    }
+
+    public void ResetCursor() {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        currentCursor = null;
+    }
+
+    public bool IsCursorSet() {
+        return !!currentCursor;
+    }
+}
