@@ -989,8 +989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Window
   minSize: {x: 200, y: 150}
   rectTransform: {fileID: 7618758920235901781}
-  scrollRectTransform: {fileID: 0}
-  contentRectTransform: {fileID: 0}
+  scrollRect: {fileID: 2340444650213397501}
 --- !u!1 &5430366743760214593
 GameObject:
   m_ObjectHideFlags: 0

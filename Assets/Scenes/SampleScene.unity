@@ -388,47 +388,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7618758920235901781, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
   m_PrefabInstance: {fileID: 1371259907747386007}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &820001198
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &722226941 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4832962346710736554, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
+  m_PrefabInstance: {fileID: 1371259907747386007}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/RoundedCorners
-  m_Shader: {fileID: 4800000, guid: 0bd2ec5d73751e34a814274a454bec41, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _OuterUV: {r: 0, g: 0, b: 1, a: 1}
-    - _WidthHeightRadius: {r: 300, g: 200, b: 10, a: 0}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812e27049c168a849841f96fce4a9124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Window
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,7 +527,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1171053502
+--- !u!21 &1027181887
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/RoundedCorners
+  m_Shader: {fileID: 4800000, guid: 0bd2ec5d73751e34a814274a454bec41, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _OuterUV: {r: 0, g: 0, b: 1, a: 1}
+    - _WidthHeightRadius: {r: 300, g: 200, b: 10, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1053243359
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -598,49 +609,6 @@ Material:
     - _halfSize: {r: 150, g: 15, b: 0, a: 0}
     - _r: {r: 5, g: 5, b: 0, a: 0}
     - _rect2props: {r: 0.000015258789, g: -2.5000153, b: 114.90486, a: 114.90486}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &1401809881
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _OuterUV: {r: 0, g: 0, b: 1, a: 1}
-    - _halfSize: {r: 144.5, g: 3, b: 0, a: 0}
-    - _r: {r: 3, g: 3, b: 3, a: 3}
-    - _rect2props: {r: 0.000015258789, g: 0, b: 102.17693, a: 102.17693}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!224 &1549692809 stripped
@@ -723,6 +691,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647401320}
   m_CullTransparentMesh: 1
+--- !u!21 &1658765120
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/RoundedCorners
+  m_Shader: {fileID: 4800000, guid: 0bd2ec5d73751e34a814274a454bec41, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _OuterUV: {r: 0, g: 0, b: 1, a: 1}
+    - _WidthHeightRadius: {r: 300, g: 200, b: 10, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!224 &1693925373 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5842776426525803515, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
@@ -836,15 +845,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!21 &2033495486
+--- !u!21 &2013657494
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/RoundedCorners
-  m_Shader: {fileID: 4800000, guid: 0bd2ec5d73751e34a814274a454bec41, type: 3}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -874,7 +883,9 @@ Material:
     - _UseUIAlphaClip: 0
     m_Colors:
     - _OuterUV: {r: 0, g: 0, b: 1, a: 1}
-    - _WidthHeightRadius: {r: 300, g: 200, b: 10, a: 0}
+    - _halfSize: {r: 144.5, g: 3, b: 0, a: 0}
+    - _r: {r: 3, g: 3, b: 3, a: 3}
+    - _rect2props: {r: 0.000015258789, g: 0, b: 102.17693, a: 102.17693}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!1001 &1371259907747386007
@@ -924,11 +935,11 @@ PrefabInstance:
     - target: {fileID: 1162964166113734730, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2033495486}
+      objectReference: {fileID: 1658765120}
     - target: {fileID: 1710879882563788141, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1401809881}
+      objectReference: {fileID: 2013657494}
     - target: {fileID: 2340444650213397501, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Content
       value: 
@@ -936,7 +947,7 @@ PrefabInstance:
     - target: {fileID: 3141511045503386326, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 820001198}
+      objectReference: {fileID: 1027181887}
     - target: {fileID: 3754250060079752527, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: rect2props.w
       value: -1.4142137
@@ -1008,7 +1019,7 @@ PrefabInstance:
     - target: {fileID: 6595597625348554989, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1171053502}
+      objectReference: {fileID: 1053243359}
     - target: {fileID: 7618758920235901781, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1219,7 +1230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5842776426525803515, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -162.99255
+      value: -162.99904
       objectReference: {fileID: 0}
     - target: {fileID: 5842776426525803515, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1233,6 +1244,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6355683030813131684, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
+      propertyPath: window
+      value: 
+      objectReference: {fileID: 722226941}
     - target: {fileID: 6623356158862818185, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
       propertyPath: m_Name
       value: Terminal

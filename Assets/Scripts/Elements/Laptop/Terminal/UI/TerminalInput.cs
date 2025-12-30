@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class TerminalInput : MonoBehaviour {
     public TMP_InputField input;
+    public Window window;
 
     private readonly List<string> inputHistory = new() { "" };
     private int currentInputHistoryIndex = 0;
@@ -59,6 +60,8 @@ public class TerminalInput : MonoBehaviour {
 
         wasPreviousInputNavigation = any && (up || down);
         previousCaretPosition = input.caretPosition;
+
+        ScrollWindowToBottom();
     }
 
     private void AddToHistory(string text) {
@@ -80,5 +83,13 @@ public class TerminalInput : MonoBehaviour {
     private void Clear() {
         input.text = "";
         input.ActivateInputField();
+    }
+
+    private void ScrollWindowToBottom() {
+        if (window == null) return;
+        if (window.scrollRect == null) return;
+
+        window.scrollRect.verticalNormalizedPosition = 0f;
+        window.scrollRect.horizontalNormalizedPosition = 0f;
     }
 }
