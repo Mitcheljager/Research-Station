@@ -58,12 +58,12 @@ public class Window : MonoBehaviour {
 
         while (time < transitionDurationSeconds) {
             time += Time.deltaTime;
-            float t = Mathf.Clamp01(time / transitionDurationSeconds);
+            float currentTime = Mathf.Clamp01(time / transitionDurationSeconds);
 
-            rectTransform.anchorMin = Vector2.Lerp(startAnchorMin, targetAnchorMin, t);
-            rectTransform.anchorMax = Vector2.Lerp(startAnchorMax, targetAnchorMax, t);
-            rectTransform.offsetMin = Vector2.Lerp(startOffsetMin, targetOffsetMin, t);
-            rectTransform.offsetMax = Vector2.Lerp(startOffsetMax, targetOffsetMax, t);
+            rectTransform.anchorMin = Vector2.Lerp(startAnchorMin, targetAnchorMin, currentTime);
+            rectTransform.anchorMax = Vector2.Lerp(startAnchorMax, targetAnchorMax, currentTime);
+            rectTransform.offsetMin = Vector2.Lerp(startOffsetMin, targetOffsetMin, currentTime);
+            rectTransform.offsetMax = Vector2.Lerp(startOffsetMax, targetOffsetMax, currentTime);
 
             yield return null;
         }
