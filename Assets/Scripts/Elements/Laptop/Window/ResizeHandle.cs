@@ -10,9 +10,14 @@ public class ResizeHandler : MonoBehaviour, IBeginDragHandler, IDragHandler {
     public HandleType type;
     public Window window;
 
+    private CursorManager cursorManager;
     private Vector2 startMousePosition;
     private Vector2 startSize;
     private Vector2 startPosition;
+
+    void Start() {
+        cursorManager = FindFirstObjectByType<CursorManager>();
+    }
 
     public void OnBeginDrag(PointerEventData eventData) {
         RectTransform parent = window.rectTransform.parent as RectTransform;
@@ -21,6 +26,8 @@ public class ResizeHandler : MonoBehaviour, IBeginDragHandler, IDragHandler {
 
         startSize = window.rectTransform.sizeDelta;
         startPosition = window.rectTransform.anchoredPosition;
+
+        cursorManager.SetCursorDownTransform(transform);
     }
 
     public void OnDrag(PointerEventData eventData) {

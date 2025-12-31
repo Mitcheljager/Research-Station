@@ -2,12 +2,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class SetCursorOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler {
+public class SetCursorOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     public Texture2D cursorTexture;
-    public bool keepCursorWhileMouseIsDown = true;
 
     private CursorManager cursorManager;
-    private bool isMouseDown = false;
     private bool isHovering = false;
 
     void Start() {
@@ -15,27 +13,22 @@ public class SetCursorOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExi
     }
 
     void Update() {
-        if (!isMouseDown || !keepCursorWhileMouseIsDown) return;
         if (!Mouse.current.leftButton.wasReleasedThisFrame) return;
+        if (cursorManager.cursorDownStartedOnTransform != transform) return;
+        if (isHovering) return;
 
-        isMouseDown = false;
-
-        if (!isHovering) cursorManager.ResetCursor();
+        cursorManager.ResetCursor();
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
         isHovering = true;
 
-        if ((!isMouseDown && keepCursorWhileMouseIsDown) || cursorManager.IsCursorSet()) Cursor.SetCursor(cursorTexture, new Vector2(cursorTexture.width * 0.5f, cursorTexture.height * 0.5f), CursorMode.Auto);
+        if (!cursorManager.IsCursorDown()) Cursor.SetCursor(cursorTexture, new Vector2(cursorTexture.width * 0.5f, cursorTexture.height * 0.5f), CursorMode.Auto);
     }
 
     public void OnPointerExit(PointerEventData eventData) {
         isHovering = false;
 
-        if (!keepCursorWhileMouseIsDown || !isMouseDown) cursorManager.ResetCursor();
-    }
-
-    public void OnPointerDown(PointerEventData eventData) {
-        isMouseDown = true;
+        if (!cursorManager.IsCursorDown()) cursorManager.ResetCursor();
     }
 }
