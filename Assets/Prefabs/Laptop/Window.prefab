@@ -1202,9 +1202,15 @@ MonoBehaviour:
   minSize: {x: 200, y: 150}
   rectTransform: {fileID: 7618758920235901781}
   scrollRect: {fileID: 2340444650213397501}
-  maximizeImage: {fileID: 1269601990231293181}
-  maximizeRestoreSprite: {fileID: 21300000, guid: cc449181f764e53468d20b56451ea6d5, type: 3}
-  transitionDurationSeconds: 0.15
+  resizeHandles:
+  - {fileID: 4545040224791952234}
+  - {fileID: 4314108134838540983}
+  - {fileID: 6595284985292900227}
+  - {fileID: 7905121424370258421}
+  - {fileID: 6756824290982328834}
+  - {fileID: 3093132201546039157}
+  - {fileID: 5767557988151918840}
+  - {fileID: 445139003962031277}
   isMaximized: 0
 --- !u!1 &5430366743760214593
 GameObject:
@@ -1706,6 +1712,7 @@ GameObject:
   - component: {fileID: 1269601990231293181}
   - component: {fileID: 9159620040155062892}
   - component: {fileID: 3329209830691450834}
+  - component: {fileID: 2570292308816868392}
   m_Layer: 5
   m_Name: Maximize
   m_TagString: Untagged
@@ -1798,9 +1805,9 @@ MonoBehaviour:
   assignedEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4832962346710736554}
-        m_TargetAssemblyTypeName: Window, Assembly-CSharp
-        m_MethodName: Maximize
+      - m_Target: {fileID: 2570292308816868392}
+        m_TargetAssemblyTypeName: Maximize, Assembly-CSharp
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1810,6 +1817,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2570292308816868392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891436042602798453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85fd2bb898511a64da16bc3133b63de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Maximize
+  window: {fileID: 4832962346710736554}
+  maximizeImage: {fileID: 1269601990231293181}
+  maximizeRestoreSprite: {fileID: 21300000, guid: cc449181f764e53468d20b56451ea6d5, type: 3}
+  transitionDurationSeconds: 0.15
 --- !u!1 &7982439434396447534
 GameObject:
   m_ObjectHideFlags: 0

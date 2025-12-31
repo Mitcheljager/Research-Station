@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ResizeHandler : MonoBehaviour, IBeginDragHandler, IDragHandler {
+public class ResizeHandle : MonoBehaviour, IBeginDragHandler, IDragHandler {
     public enum HandleType {
         Left, Right, Top, Bottom,
         TopLeft, TopRight, BottomRight, BottomLeft
