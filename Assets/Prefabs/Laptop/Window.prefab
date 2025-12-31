@@ -1198,9 +1198,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812e27049c168a849841f96fce4a9124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Window
+  screen: {fileID: 0}
   minSize: {x: 200, y: 150}
   rectTransform: {fileID: 7618758920235901781}
   scrollRect: {fileID: 2340444650213397501}
+  maximizeImage: {fileID: 1269601990231293181}
+  maximizeRestoreSprite: {fileID: 21300000, guid: cc449181f764e53468d20b56451ea6d5, type: 3}
+  transitionDurationSeconds: 0.15
+  isMaximized: 0
 --- !u!1 &5430366743760214593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,6 +1705,7 @@ GameObject:
   - component: {fileID: 1799472793798476519}
   - component: {fileID: 1269601990231293181}
   - component: {fileID: 9159620040155062892}
+  - component: {fileID: 3329209830691450834}
   m_Layer: 5
   m_Name: Maximize
   m_TagString: Untagged
@@ -1777,6 +1783,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetImageColorOnHover
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &3329209830691450834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891436042602798453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec69e520e60b10e47b3f0deb67e42bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventOnClick
+  assignedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4832962346710736554}
+        m_TargetAssemblyTypeName: Window, Assembly-CSharp
+        m_MethodName: Maximize
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7982439434396447534
 GameObject:
   m_ObjectHideFlags: 0
