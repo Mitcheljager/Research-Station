@@ -20,7 +20,7 @@ public class Maximize : MonoBehaviour {
         maximizeOriginalSprite = maximizeImage.sprite;
     }
 
-    public void Toggle() {
+    public void ToggleMaximize() {
         if (currentTransition != null) StopCoroutine(currentTransition);
 
         if (!window.isMaximized) {
@@ -41,6 +41,8 @@ public class Maximize : MonoBehaviour {
         }
 
         ToggleResizeHandles();
+
+        WindowEvent.UpdateWindow(window);
     }
 
     public void ToggleResizeHandles() {

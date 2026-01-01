@@ -1518,6 +1518,8 @@ GameObject:
   - component: {fileID: 494451414903613888}
   - component: {fileID: 6874696998730990440}
   - component: {fileID: 1982380301558631973}
+  - component: {fileID: 3629902586934527214}
+  - component: {fileID: 5629297948154049472}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -1595,6 +1597,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetImageColorOnHover
   hoverColor: {r: 0.735849, g: 0.1424166, b: 0.010412939, a: 1}
+--- !u!114 &3629902586934527214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408271251494730713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec69e520e60b10e47b3f0deb67e42bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventOnClick
+  assignedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5629297948154049472}
+        m_TargetAssemblyTypeName: Close, Assembly-CSharp
+        m_MethodName: CloseWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5629297948154049472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408271251494730713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8172d80247737e34f9d8de9b8f2f3a1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Close
+  window: {fileID: 4832962346710736554}
 --- !u!1 &7873858493298114319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,7 +1849,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2570292308816868392}
         m_TargetAssemblyTypeName: Maximize, Assembly-CSharp
-        m_MethodName: Toggle
+        m_MethodName: ToggleMaximize
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

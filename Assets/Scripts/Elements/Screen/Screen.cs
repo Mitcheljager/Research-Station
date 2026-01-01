@@ -5,13 +5,30 @@ public class Screen : MonoBehaviour {
     public Canvas canvas;
     public RectTransform topBarRectTransform;
     public RectTransform contentAreaRectTransform;
+    public WindowTray windowTray;
 
     public List<Window> activeWindows = new();
 
-    void Start() {
+    void OnEnable() {
+        WindowEvent.OnCloseWindow += RemoveActiveWindow;
+    }
+
+    void OnDisable() {
+        WindowEvent.OnCloseWindow -= RemoveActiveWindow;
+    }
+
+    void Awake() {
         foreach(Window window in canvas.transform.GetComponentsInChildren<Window>()) {
             window.screen = this;
             activeWindows.Add(window);
         }
+    }
+
+    private void RemoveActiveWindow(Window window) {
+        activeWindows.Remove(window);
+
+        Destroy(window.gameObject);
+
+        WindowEvent.UpdateWindow(window);
     }
 }
