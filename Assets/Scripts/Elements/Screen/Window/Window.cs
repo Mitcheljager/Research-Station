@@ -12,4 +12,5 @@ public class Window : MonoBehaviour {
     [Header("State")]
     [Fade] public Screen screen;
     [Fade] public bool isMaximized = false;
+    [Fade] public bool isMinimized = false;
 }

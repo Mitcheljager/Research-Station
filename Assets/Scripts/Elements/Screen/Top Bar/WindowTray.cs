@@ -23,7 +23,13 @@ public class WindowTray : MonoBehaviour {
         }
 
         foreach(Window window in screen.activeWindows) {
-            Instantiate(windowTrayItemPrefab, transform);
+            GameObject instantiatedGameObject = Instantiate(windowTrayItemPrefab, transform);
+
+            WindowTrayItem windowTrayItem = instantiatedGameObject.GetComponent<WindowTrayItem>();
+
+            windowTrayItem.window = window;
+            windowTrayItem.minimize.window = window;
+            windowTrayItem.SetMinimized();
         }
     }
 }

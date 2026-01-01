@@ -925,6 +925,8 @@ GameObject:
   - component: {fileID: 1828253673836172738}
   - component: {fileID: 4369993028379243121}
   - component: {fileID: 4316227456896841234}
+  - component: {fileID: 1987451537958165851}
+  - component: {fileID: 5884782157988807548}
   m_Layer: 5
   m_Name: Minimize
   m_TagString: Untagged
@@ -1002,6 +1004,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetImageColorOnHover
   hoverColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1987451537958165851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805362835748458823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec69e520e60b10e47b3f0deb67e42bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventOnClick
+  assignedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5884782157988807548}
+        m_TargetAssemblyTypeName: Minimize, Assembly-CSharp
+        m_MethodName: ToggleMinimize
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &5884782157988807548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805362835748458823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4407b32e2bdc574783cd2ab372e6b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Minimize
+  window: {fileID: 4832962346710736554}
 --- !u!1 &4816686114741352999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812e27049c168a849841f96fce4a9124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Window
-  screen: {fileID: 0}
   minSize: {x: 200, y: 150}
   rectTransform: {fileID: 7618758920235901781}
   scrollRect: {fileID: 2340444650213397501}
@@ -1211,7 +1252,9 @@ MonoBehaviour:
   - {fileID: 3093132201546039157}
   - {fileID: 5767557988151918840}
   - {fileID: 445139003962031277}
+  screen: {fileID: 0}
   isMaximized: 0
+  isMinimized: 0
 --- !u!1 &5430366743760214593
 GameObject:
   m_ObjectHideFlags: 0
