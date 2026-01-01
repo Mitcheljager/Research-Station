@@ -36,6 +36,9 @@ public class Window : MonoBehaviour {
     private void ChangeFocus(Window window) {
         isFocused = window == this;
 
+        if (isFocused) rectTransform.SetAsLastSibling();
+        else rectTransform.SetAsFirstSibling();
+
         WindowEvent.UpdateWindow(this);
     }
 }
