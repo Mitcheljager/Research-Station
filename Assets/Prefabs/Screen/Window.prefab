@@ -1031,7 +1031,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  bubble: 1
+  bubble: 0
 --- !u!114 &5884782157988807548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1286,7 +1286,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  bubble: 1
+  bubble: 0
 --- !u!114 &7376132436858536231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1726,7 +1726,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  bubble: 1
+  bubble: 0
 --- !u!114 &5629297948154049472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,7 +1962,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  bubble: 1
+  bubble: 0
 --- !u!114 &2570292308816868392
 MonoBehaviour:
   m_ObjectHideFlags: 0
