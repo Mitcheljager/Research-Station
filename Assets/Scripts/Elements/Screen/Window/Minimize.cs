@@ -7,6 +7,8 @@ public class Minimize : MonoBehaviour {
 
     public void ToggleMinimize() {
         window.isMinimized = !window.isMinimized;
+        window.isFocused = !window.isMinimized;
+
         window.gameObject.SetActive(!window.isMinimized);
 
         WindowEvent.UpdateWindow(window);

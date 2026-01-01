@@ -4,18 +4,16 @@ using UnityEngine.UI;
 
 public class WindowTrayItem : MonoBehaviour {
     public Window window;
-    public Image focusBackground;
+    public Image activeBackground;
     public Image regularBackground;
-    public Image activeIndicator;
+    public Image focusIndicator;
     public Minimize minimize;
 
-    public void SetFocus(bool state) {
-        focusBackground.gameObject.SetActive(state);
+    public void SetFocus() {
+        focusIndicator.gameObject.SetActive(window.isFocused);
     }
 
     public void SetMinimized() {
-        activeIndicator.gameObject.SetActive(!window.isMinimized);
-
-        SetFocus(!window.isMinimized);
+        activeBackground.gameObject.SetActive(!window.isMinimized);
     }
 }

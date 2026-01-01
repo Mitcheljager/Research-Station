@@ -13,4 +13,29 @@ public class Window : MonoBehaviour {
     [Fade] public Screen screen;
     [Fade] public bool isMaximized = false;
     [Fade] public bool isMinimized = false;
+    [Fade] public bool isFocused = false;
+
+    void OnEnable() {
+        WindowEvent.OnFocusWindow += ChangeFocus;
+    }
+
+    void OnDisable() {
+        WindowEvent.OnFocusWindow -= ChangeFocus;
+    }
+
+    public void Blur() {
+        ChangeFocus(null);
+    }
+
+    public void Focus() {
+        ChangeFocus(this);
+
+        WindowEvent.FocusWindow(this);
+    }
+
+    private void ChangeFocus(Window window) {
+        isFocused = window == this;
+
+        WindowEvent.UpdateWindow(this);
+    }
 }

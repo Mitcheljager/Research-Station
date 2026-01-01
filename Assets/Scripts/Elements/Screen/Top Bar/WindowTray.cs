@@ -29,6 +29,8 @@ public class WindowTray : MonoBehaviour {
 
             windowTrayItem.window = window;
             windowTrayItem.minimize.window = window;
+
+            windowTrayItem.SetFocus();
             windowTrayItem.SetMinimized();
         }
     }

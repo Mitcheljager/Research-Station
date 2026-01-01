@@ -63,9 +63,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowTrayItem
   window: {fileID: 0}
-  focusBackground: {fileID: 1263988487024218895}
+  activeBackground: {fileID: 1263988487024218895}
   regularBackground: {fileID: 8066856481667829322}
-  activeIndicator: {fileID: 1267900900227207153}
+  focusIndicator: {fileID: 1267900900227207153}
   minimize: {fileID: 8016538392776913748}
 --- !u!114 &3650878834679074507
 MonoBehaviour:
@@ -94,6 +94,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  bubble: 0
 --- !u!114 &8016538392776913748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +121,7 @@ GameObject:
   - component: {fileID: 1267900900227207153}
   - component: {fileID: 3397527776100124387}
   m_Layer: 5
-  m_Name: Active Indicator
+  m_Name: Focus Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,7 +315,7 @@ GameObject:
   - component: {fileID: 1263988487024218895}
   - component: {fileID: 832869477394240113}
   m_Layer: 5
-  m_Name: Focus Background
+  m_Name: Active Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
