@@ -5,6 +5,8 @@ public static class WindowEvent {
     public static event Action<Window> OnUpdateWindow;
     public static event Action<Window> OnCloseWindow;
     public static event Action<Window> OnFocusWindow;
+    public static event Action<Window> OnBlurWindow;
+    public static event Action<Window> OnMinimizeWindow;
 
     public static void UpdateWindow(Window window) {
         OnUpdateWindow?.Invoke(window);
@@ -16,5 +18,13 @@ public static class WindowEvent {
 
     public static void FocusWindow(Window window) {
         OnFocusWindow?.Invoke(window);
+    }
+
+    public static void BlurWindow(Window window) {
+        OnBlurWindow?.Invoke(window);
+    }
+
+    public static void MinimizeWindow(Window window) {
+        OnMinimizeWindow?.Invoke(window);
     }
 }

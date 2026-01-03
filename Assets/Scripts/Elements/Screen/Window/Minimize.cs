@@ -5,11 +5,25 @@ using System.Collections;
 public class Minimize : MonoBehaviour {
     public Window window;
 
-    public void ToggleMinimize() {
+    void OnEnable() {
+        WindowEvent.OnMinimizeWindow += ToggleMinimize;
+    }
+
+    void OnDisable() {
+        WindowEvent.OnMinimizeWindow -= ToggleMinimize;
+    }
+
+    public void ToggleMinimize(Window eventWindow) {
+        if (eventWindow != window) return;
+
         window.isMinimized = !window.isMinimized;
         window.isFocused = !window.isMinimized;
 
-        window.gameObject.SetActive(!window.isMinimized);
+        if (window.isMinimized) {
+            window.transform.localScale = Vector3.zero;
+        } else {
+            window.transform.localScale = Vector3.one;
+        }
 
         WindowEvent.UpdateWindow(window);
     }

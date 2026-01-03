@@ -495,7 +495,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  bubble: 1
+  bubble: 0
   requireDoubleClick: 1
 --- !u!1 &1115297723655021314
 GameObject:
@@ -1052,10 +1052,10 @@ MonoBehaviour:
       - m_Target: {fileID: 5884782157988807548}
         m_TargetAssemblyTypeName: Minimize, Assembly-CSharp
         m_MethodName: ToggleMinimize
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 4832962346710736554}
+          m_ObjectArgumentAssemblyTypeName: Window, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1317,7 +1317,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  bubble: 0
+  bubble: 1
   requireDoubleClick: 0
 --- !u!114 &7376132436858536231
 MonoBehaviour:

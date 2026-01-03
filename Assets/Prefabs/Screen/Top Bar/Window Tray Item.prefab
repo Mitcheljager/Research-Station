@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3956531736843229427}
   - component: {fileID: 7734651904231458103}
   - component: {fileID: 3650878834679074507}
-  - component: {fileID: 8016538392776913748}
   m_Layer: 5
   m_Name: Window Tray Item
   m_TagString: Untagged
@@ -66,7 +65,6 @@ MonoBehaviour:
   activeBackground: {fileID: 1263988487024218895}
   regularBackground: {fileID: 8066856481667829322}
   focusIndicator: {fileID: 1267900900227207153}
-  minimize: {fileID: 8016538392776913748}
 --- !u!114 &3650878834679074507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,9 +80,9 @@ MonoBehaviour:
   assignedEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8016538392776913748}
-        m_TargetAssemblyTypeName: Minimize, Assembly-CSharp
-        m_MethodName: ToggleMinimize
+      - m_Target: {fileID: 7734651904231458103}
+        m_TargetAssemblyTypeName: WindowTrayItem, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -95,19 +93,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   bubble: 0
---- !u!114 &8016538392776913748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119688685024725184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4407b32e2bdc574783cd2ab372e6b66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Minimize
-  window: {fileID: 0}
+  requireDoubleClick: 0
 --- !u!1 &3369272611764284679
 GameObject:
   m_ObjectHideFlags: 0

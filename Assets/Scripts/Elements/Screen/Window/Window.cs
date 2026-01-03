@@ -25,6 +25,8 @@ public class Window : MonoBehaviour {
 
     public void Blur() {
         ChangeFocus(null);
+
+        WindowEvent.BlurWindow(this);
     }
 
     public void Focus() {
@@ -34,11 +36,13 @@ public class Window : MonoBehaviour {
     }
 
     private void ChangeFocus(Window window) {
+        if (window == null && !isFocused) return;
+
         isFocused = window == this;
 
-        if (isFocused) rectTransform.SetAsLastSibling();
-        else rectTransform.SetAsFirstSibling();
-
-        WindowEvent.UpdateWindow(this);
+        if (window != null) {
+            if (isFocused) rectTransform.SetAsLastSibling();
+            else rectTransform.SetAsFirstSibling();
+        }
     }
 }

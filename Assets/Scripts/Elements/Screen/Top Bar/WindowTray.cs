@@ -28,10 +28,9 @@ public class WindowTray : MonoBehaviour {
             WindowTrayItem windowTrayItem = instantiatedGameObject.GetComponent<WindowTrayItem>();
 
             windowTrayItem.window = window;
-            windowTrayItem.minimize.window = window;
 
-            windowTrayItem.SetFocus();
-            windowTrayItem.SetMinimized();
+            windowTrayItem.SetFocusState(window);
+            windowTrayItem.SetMinimizeState();
         }
     }
 }
