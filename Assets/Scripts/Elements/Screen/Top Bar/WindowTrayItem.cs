@@ -28,15 +28,11 @@ public class WindowTrayItem : MonoBehaviour {
     }
 
     public void OnClick() {
-        Debug.Log(window);
-
-
         if (window.isMinimized || window.isFocused) {
             WindowEvent.MinimizeWindow(window);
         }
 
         if (!window.isMinimized) {
-            Debug.Log("focus");
             StartCoroutine(DelayFocus());
         }
     }
