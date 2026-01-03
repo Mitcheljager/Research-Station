@@ -2,8 +2,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WindowTray : MonoBehaviour {
-    public Screen screen;
     public GameObject windowTrayItemPrefab;
+
+    private Screen screen;
 
     void OnEnable() {
         WindowEvent.OnUpdateWindow += UpdateItems;
@@ -14,6 +15,8 @@ public class WindowTray : MonoBehaviour {
     }
 
     void Start() {
+        screen = GetComponentInParent<Screen>();
+
         UpdateItems(null);
     }
 
