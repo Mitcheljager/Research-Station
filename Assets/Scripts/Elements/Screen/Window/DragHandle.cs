@@ -18,7 +18,8 @@ public class DragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler {
         if (window.isMaximized) return;
 
         RectTransformUtility.ScreenPointToLocalPointInRectangle(window.rectTransform, eventData.position, eventData.pressEventCamera, out offset);
-        window.Focus();
+
+        WindowEvent.FocusWindow(window);
     }
 
     public void OnDrag(PointerEventData eventData) {
