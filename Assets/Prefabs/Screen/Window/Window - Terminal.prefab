@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2271957138254636303, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Size
-      value: 0.99997455
+      value: 0.9978559
       objectReference: {fileID: 0}
     - target: {fileID: 2340444650213397501, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Content
@@ -118,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 2622858533181608773}
     - target: {fileID: 5109085948094617315, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Name
-      value: Window Variant
+      value: Window - Terminal
       objectReference: {fileID: 0}
     - target: {fileID: 5353744962919846926, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -150,7 +150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6107827249103536727, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Size
-      value: 0.9999902
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6107827249103536727, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Value
@@ -418,7 +418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5842776426525803515, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -163.00002
+      value: -162.9654
       objectReference: {fileID: 0}
     - target: {fileID: 5842776426525803515, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

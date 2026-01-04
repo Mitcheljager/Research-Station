@@ -1229,6 +1229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7618758920235901781}
   - component: {fileID: 4832962346710736554}
+  - component: {fileID: 8933353858160914004}
   - component: {fileID: 6756083160234696110}
   - component: {fileID: 7376132436858536231}
   m_Layer: 5
@@ -1290,6 +1291,18 @@ MonoBehaviour:
   isMaximized: 0
   isMinimized: 0
   isFocused: 0
+--- !u!114 &8933353858160914004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5109085948094617315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76087d41d9ccacf44ac39c39025d4f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Focus
 --- !u!114 &6756083160234696110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1305,13 +1318,13 @@ MonoBehaviour:
   assignedEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4832962346710736554}
-        m_TargetAssemblyTypeName: Window, Assembly-CSharp
-        m_MethodName: Focus
-        m_Mode: 1
+      - m_Target: {fileID: 8933353858160914004}
+        m_TargetAssemblyTypeName: Focus, Assembly-CSharp
+        m_MethodName: ChangeFocus
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 4832962346710736554}
+          m_ObjectArgumentAssemblyTypeName: Window, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1334,8 +1347,8 @@ MonoBehaviour:
   assignedEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4832962346710736554}
-        m_TargetAssemblyTypeName: Window, Assembly-CSharp
+      - m_Target: {fileID: 8933353858160914004}
+        m_TargetAssemblyTypeName: Focus, Assembly-CSharp
         m_MethodName: Blur
         m_Mode: 1
         m_Arguments:
