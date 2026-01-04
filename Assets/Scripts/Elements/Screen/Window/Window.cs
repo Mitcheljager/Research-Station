@@ -23,18 +23,6 @@ public class Window : MonoBehaviour {
         WindowEvent.OnFocusWindow -= ChangeFocus;
     }
 
-    public void Blur() {
-        ChangeFocus(null);
-
-        WindowEvent.BlurWindow(this);
-    }
-
-    public void Focus() {
-        ChangeFocus(this);
-
-        WindowEvent.FocusWindow(this);
-    }
-
     private void ChangeFocus(Window window) {
         if (window == null && !isFocused) return;
 
