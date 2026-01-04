@@ -6,6 +6,11 @@ public class Window : MonoBehaviour {
     public RectTransform rectTransform;
     public ScrollRect scrollRect;
 
+    [Header("Fluff")]
+    public string windowName;
+    public Sprite iconSprite;
+    public bool allowMultiple = false;
+
     [Header("Resize")]
     public ResizeHandle[] resizeHandles;
 

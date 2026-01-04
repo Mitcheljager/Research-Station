@@ -10,11 +10,12 @@ public class Screen : MonoBehaviour {
     public List<Window> activeWindows = new();
 
     void OnEnable() {
-        WindowEvent.OnCloseWindow += DestroyActiveWindow;
+        WindowEvent.OnCreateWindow += CreateWindow;
+        WindowEvent.OnDestroyWindow += DestroyActiveWindow;
     }
 
     void OnDisable() {
-        WindowEvent.OnCloseWindow -= DestroyActiveWindow;
+        WindowEvent.OnDestroyWindow -= DestroyActiveWindow;
     }
 
     void Awake() {
@@ -22,6 +23,10 @@ public class Screen : MonoBehaviour {
             window.screen = this;
             activeWindows.Add(window);
         }
+    }
+
+    private void CreateWindow(GameObject windowPrefab) {
+
     }
 
     private void DestroyActiveWindow(Window window) {

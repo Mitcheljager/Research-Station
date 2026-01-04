@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2271957138254636303, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Size
-      value: 0.9978559
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2340444650213397501, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: m_Content
@@ -111,6 +111,14 @@ PrefabInstance:
     - target: {fileID: 3923676499818518121, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: rect2props.z
       value: 9.192389
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832962346710736554, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
+      propertyPath: iconSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7c5705bffdbe6d245b6f9fab75d23322, type: 3}
+    - target: {fileID: 4832962346710736554, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
+      propertyPath: windowName
+      value: Terminal
       objectReference: {fileID: 0}
     - target: {fileID: 4832962346710736554, guid: adaaa7f978026df4d95f9d2aa0ac3f3f, type: 3}
       propertyPath: scrollRectTransform
@@ -418,7 +426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5842776426525803515, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -162.9654
+      value: -162.42247
       objectReference: {fileID: 0}
     - target: {fileID: 5842776426525803515, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -450,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7548250114844393986, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7548250114844393986, guid: 3876e2a2f64db834d8742e4baad77435, type: 3}
       propertyPath: m_SizeDelta.y

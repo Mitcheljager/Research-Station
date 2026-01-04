@@ -5,7 +5,7 @@ using System.Collections;
 public class Close : MonoBehaviour {
     public Window window;
 
-    public void CloseWindow() {
-        WindowEvent.CloseWindow(window);
+    public void DestroyWindow() {
+        WindowEvent.DestroyWindow(window);
     }
 }
