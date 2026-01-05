@@ -4,7 +4,7 @@ using UnityEngine;
 public class Focus : MonoBehaviour {
     private Window window;
 
-    void Start() {
+    void Awake() {
         window = GetComponent<Window>();
     }
 

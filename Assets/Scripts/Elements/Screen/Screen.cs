@@ -26,7 +26,13 @@ public class Screen : MonoBehaviour {
     }
 
     private void CreateWindow(GameObject windowPrefab) {
+        GameObject createdWindow = Instantiate(windowPrefab, contentAreaRectTransform.transform);
 
+        Window window = createdWindow.GetComponent<Window>();
+        activeWindows.Add(window);
+
+        WindowEvent.UpdateWindow(window);
+        WindowEvent.FocusWindow(window);
     }
 
     private void DestroyActiveWindow(Window window) {
