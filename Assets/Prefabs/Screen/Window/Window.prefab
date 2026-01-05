@@ -1278,6 +1278,9 @@ MonoBehaviour:
   minSize: {x: 200, y: 150}
   rectTransform: {fileID: 7618758920235901781}
   scrollRect: {fileID: 2340444650213397501}
+  windowName: 
+  iconSprite: {fileID: 0}
+  allowMultiple: 0
   resizeHandles:
   - {fileID: 4545040224791952234}
   - {fileID: 4314108134838540983}
@@ -1761,7 +1764,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5629297948154049472}
         m_TargetAssemblyTypeName: Close, Assembly-CSharp
-        m_MethodName: CloseWindow
+        m_MethodName: DestroyWindow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
