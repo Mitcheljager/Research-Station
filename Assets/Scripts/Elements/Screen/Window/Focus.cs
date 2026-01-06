@@ -27,9 +27,9 @@ public class Focus : MonoBehaviour {
 
         window.isFocused = eventWindow == window;
 
+        if (!window.isFocused) return;
         if (eventWindow == null) return;
 
-        if (window.isFocused) window.rectTransform.SetAsLastSibling();
-        else window.rectTransform.SetAsFirstSibling();
+        window.rectTransform.SetAsLastSibling();
     }
 }
