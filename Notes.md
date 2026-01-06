@@ -32,6 +32,11 @@
         - You see someone outside, a long outstretched shadow as the sun sits low. You could choose to come to their rescue only to discover that no matter how far you walk they stay the same distance away
         - Radio transmissions come in that seem otherworldly. It's up to you to decide if these are just noise, some important message, or something perhaps otherwordly
         - Microscope samples show data unlike anything in existence
+        - A hatch appears somewhere outside, leading to a bunker of sorts?
+        - A giant ship appears?
+        - You walk outside, turn around, and your tent is gone. Turn around again and it's back
+        - You walk out into nothingness on to appear right back where you started
+        - After some events you "die" only to wake up in your bed, making it seems like it was a dream. Maybe it skips days and even notifies you of missed contact moments?
     - Failing to perform your tasks may lead to failure of equipment, causing you to make choices on how to proceed
         - You could stay put and wait for rescue
         - You can leave your base and attempt to head back to base on foot
