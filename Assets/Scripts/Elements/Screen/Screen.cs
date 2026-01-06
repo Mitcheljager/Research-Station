@@ -15,6 +15,7 @@ public class Screen : MonoBehaviour {
     }
 
     void OnDisable() {
+        WindowEvent.OnCreateWindow -= CreateWindow;
         WindowEvent.OnDestroyWindow -= DestroyActiveWindow;
     }
 
