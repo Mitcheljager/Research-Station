@@ -29,6 +29,8 @@ public class Screen : MonoBehaviour {
         GameObject createdWindow = Instantiate(windowPrefab, contentAreaRectTransform.transform);
 
         Window window = createdWindow.GetComponent<Window>();
+        window.AnimateIn();
+
         activeWindows.Add(window);
 
         WindowEvent.UpdateWindow(window);
